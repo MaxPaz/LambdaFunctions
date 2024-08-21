@@ -8,7 +8,7 @@ bedrock = boto3.client(service_name='bedrock-runtime')
 #Former way to call Bedrock based on model type
 #def lambda_handler(event, context):
  
- # phrase = "Hi Andrew, would you like to know how to get more information about AWS? follow the link (aws.amazon.com)"
+ # phrase = "Hi, would you like to know how to know more information about AWS? follow the link (aws.amazon.com)"
  
  # body Anthropic
  # body = json.dumps({
@@ -53,7 +53,7 @@ def get_model(name):
 
 def lambda_handler(event, context):
  
- phrase = "Hi Andrew, would you like to know how to get more information about AWS? follow the link (aws.amazon.com)"
+ phrase = "Hi, would you like to know how to know more information about AWS? follow the link (aws.amazon.com)"
  
  json_payload_body = json.loads(json.dumps(event))
  print ("-----------------")
